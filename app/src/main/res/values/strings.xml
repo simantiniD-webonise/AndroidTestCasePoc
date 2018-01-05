@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SimTestCaseSample</string>
+
+    <string name="first_name">First Name</string>
+    <string name="middle_name">Middle Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="dob">Date of birth</string>
+    <string name="submit_btn">Submit</string>
+</resources>

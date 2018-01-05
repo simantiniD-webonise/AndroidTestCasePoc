@@ -39,9 +39,14 @@ public class ListActivityTest extends ActivityInstrumentationTestCase2<ListActiv
         Activity currentActivity = getActivity();
         ArrayList<ListDataModel> list = ((ListActivity)currentActivity).createList();
         //failure
-        assertEquals(4,((ListActivity)currentActivity).getListDataAdapter().getItemCount());
+        //assertEquals(4,((ListActivity)currentActivity).getListDataAdapter().getItemCount());
         //pass
         assertEquals(list.size(),((ListActivity)currentActivity).getListDataAdapter().getItemCount());
+
+        for(int i=0;i<list.size();i++) {
+            assertTrue(solo.searchText(list.get(i).getName()));
+
+        }
 
     }
 
